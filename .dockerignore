@@ -1,0 +1,5 @@
+.git
+bazel-azure-ml-experiment
+bazel-bin
+bazel-out
+bazel-testlogs

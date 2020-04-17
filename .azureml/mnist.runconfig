@@ -1,0 +1,20 @@
+# https://github.com/Azure-Samples/MachineLearningSamples-mnist/blob/master/aml_config/docker.runconfig
+script: scripts/bazel
+target: nc6
+framework: python
+communicator: None
+maxRunDurationSeconds:
+nodeCount: 1
+environment:
+  name: prod-env
+  version:
+  environmentVariables:
+    CLOUD_TRAINING: "True"
+  python:
+    userManagedDependencies: true
+    interpreterPath: python
+  docker:
+    enabled: true
+    baseImage: azure-training-image
+    sharedVolumes: true
+    shmSize: 2g
