@@ -1,4 +1,4 @@
-/bazel-bin/
-/bazel-out/
-/bazel-testlogs/
-/bazel-azure-ml-experiment/
+bazel-bin
+bazel-out
+bazel-testlogs
+bazel-azure-ml-experiment
